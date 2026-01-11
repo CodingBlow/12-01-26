@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrinterDevStudio | Contact Us</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+        }
+        .content-section {
+            margin-bottom: 2.5rem;
+        }
+        .content-section h3 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+        .content-section p {
+            color: #475569;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+<!-- ================= NAVIGATION ================= -->
+<header class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="bg-blue-600 text-white p-2 rounded-lg">
+                        <i class="fas fa-book text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold">PrinterDevStudio</h1>
+<p class="text-xs text-gray-500">A brand owned and operated by Digi Tech</p>
+
+                    </div>
+                </div>
+                <div class="hidden md:flex gap-6 text-sm">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-blue-600">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-blue-600">Terms of Service</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="max-w-7xl mx-auto px-4 py-20">
+    <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-200">
+        <h1 class="text-4xl font-bold mb-4 text-center">Contact Us</h1>
+        <p class="text-center text-slate-600 mb-12">
+            We're here to help with questions about our educational content and printer troubleshooting guides.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-12">
+
+            <!-- Contact Info -->
+            <section class="content-section">
+                <h3>Get in Touch</h3>
+                <p class="mb-6">
+                    For general inquiries, feedback, or suggestions about our printer technology educational
+                    resources, please use the form below or email us directly.
+                </p>
+
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-blue-100 text-blue-600 p-3 rounded-xl">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold">Email</p>
+                        <a href="mailto:info@printerdevstudio.com" class="text-blue-600 hover:underline">
+                            info@printerdevstudio.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-blue-100 text-blue-600 p-3 rounded-xl">
+                        <i class="fas fa-globe text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold">Website</p>
+                        <a href="https://www.printerdevstudio.com/" class="text-blue-600 hover:underline">
+                            printerdevstudio.com
+                        </a>
+                    </div>
+                </div>
+
+                <p class="text-sm text-slate-500 mt-8">
+                    Note: PrinterDevStudio is an independent educational platform and does not provide
+                    official manufacturer support, repairs, or paid services.
+                </p>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="content-section">
+                <h3>Send Us a Message</h3>
+
+                <form class="space-y-6" id="contactForm">
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Your Name</label>
+                        <input type="text" required
+                            class="block w-full px-4 py-3 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Your Email</label>
+                        <input type="email" required
+                            class="block w-full px-4 py-3 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Your Message</label>
+                        <textarea rows="6" required
+                            class="block w-full px-4 py-3 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-blue-600 text-white px-6 py-3 rounded-2xl font-semibold hover:bg-blue-700 transition">
+                        Send Message
+                    </button>
+                </form>
+
+                <div id="successMessage"
+                    class="hidden mt-8 p-6 bg-green-50 border border-green-200 rounded-2xl text-center">
+                    <i class="fas fa-check-circle text-green-600 text-5xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-green-800 mb-2">Thank You!</h4>
+                    <p class="text-green-700">
+                        Your message has been successfully sent.<br>
+                        We will respond within 48–72 hours.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<!-- ================= BUSINESS & LEGAL INFORMATION (AIV CRITICAL) ================= -->
+<section class="bg-white border-t">
+    <div class="max-w-4xl mx-auto px-4 py-10 text-sm text-slate-700 text-center">
+        <p>
+            <strong>PrinterDevStudio</strong> is a brand owned and operated by
+            <strong>Digi Tech</strong>.
+        </p>
+        <p class="mt-2">
+            <strong>Business Address:</strong> C 78/6, Shaheen Bagh Okhla, Delhi – 110025, India<br>
+            <strong>Email:</strong> info@printerdevstudio.com
+        </p>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-slate-900 text-slate-300 pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="flex items-center justify-center gap-3 mb-6">
+            <div class="bg-blue-600 text-white p-3 rounded-xl">
+                <i class="fas fa-print"></i>
+            </div>
+            <span class="text-2xl font-bold">PrinterDevStudio</span>
+        </div>
+
+        <p class="text-sm max-w-2xl mx-auto mb-8">
+            © 2026 PrinterDevStudio. All rights reserved.<br>
+            Independent educational platform for printer technology and troubleshooting.
+        </p>
+
+        <div class="flex justify-center gap-8 text-sm">
+            <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+            <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+            <a href="contact.html" class="hover:text-white transition">Contact Us</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        form.style.display = 'none';
+        successMessage.classList.remove('hidden');
+        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+</script>
+
+</body>
+</html>
